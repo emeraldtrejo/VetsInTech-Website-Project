@@ -1,0 +1,86 @@
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.wrapper-masterhead {
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.masterhead {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+nav {
+  float: right;
+  margin-top: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #219141;
+}
+
+nav a {
+  margin-left: 30px;
+  color: #219141;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.employment{
+    display: block;
+    margin: 5rem;
+    padding: 1rem;
+    overflow: visible;
+    background: red;
+    width: 85%;
+    height: 37.5rem;
+
+}
+
+#behind{
+    background: #f1f3f2;
+    color: #000;
+    padding: 30px;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.svg-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
