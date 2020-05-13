@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="homestyle.css">
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-        
+        <script src="app.js"></script>
     </head>
 <body>
     <div class="wrapper-masterhead">
@@ -36,90 +36,61 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui vertical masthead center aligned segment" id="image">
+  <div class="ui vertical masthead center aligned segment" id="image" >
     <div class="ui text container">
-        <div><p style="float: left;"><h1 class="ui inverted header" >
+        <div id="me" style="display: flex; align-items: center;"><p style="float: left; ">
+          <h1 class="ui inverted header" >
             Hi. I'm Emerald Trejo. Nice to meet you. 
-           
-          </h1> <img src="images/myface.jpg"></p>
+          </h1>
+          <img class ="me" src="images/myface.jpg">
+           </p>
         </div>
-      
+   
     </div>
 
   </div>
 <br>
-  <div><center>  <a class="ui large button"  download target="_blank" href="images/Emerald_Trejo.pdf">Download My Resume</a></center></div>
-  
-  <br>
-  <div><center>  <a class="ui large button" href="mailto:trejo.emerald@outlook.com">Contact me Today!</a></center></div>
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      
-    </div>
+  <div style="text-align: center;">  <a class="ui large button"  download target="_blank" href="images/Emerald_Trejo.pdf">Download My Resume</a>
   </div>
   
+  <br>
+  <div style="text-align: center;">  <a class="ui large button" href="mailto:trejo.emerald@outlook.com">Contact me Today!</a></div>
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">I'm a Jewel</h3> <!--Insert rotating prism-->
+      <p>I’m always looking for new programs to teach myself.
+        I feel happiest and most excited when I’ve learned how to do something new.
+        Coding inspires me to be innovative and creative</p>
+    </div>
+  </div>
+
+  
+   <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">Play the game below to see what are some of my interests</h3> <!--Insert rotating prism-->
+      <h3>Score:<span id="result"></span></h3>
+      <div class="grids"></div>
+      
+    </div>
+  </div> 
 
 
   <div class="wrapper-footer">
     <div class="ui text container foot">
       <footer>
         <a href="mailto:trejo.emerald@outlook.com">
-          <img src="images/icons8-send-email-64.png"">
+          <img class="icons" src="images/icons8-send-email-64.png"">
           </a>
         <a href="https://www.linkedin.com/in/emerald-trejo/">
-        <img src="images/icons8-linkedin.svg"
+        <img  class="icons"src="images/icons8-linkedin.svg"
         </a>
         <a href="http://github.com/emeraldtrejo/">
-          <img src="images/icons8-github.svg">
+          <img class="icons" src="images/icons8-github.svg">
           </a>
       </footer>
      </div> 
     </div>  
 
-<!-- 
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-            <a href="mailto:trejo.emerald@outlook.com">
-                <img src="images/icons8-send-email-64.png"">
-                </a>
-              <a href="https://www.linkedin.com/in/emerald-trejo/">
-              <img src="images/icons8-linkedin.svg"
-              </a>
-              <a href="http://github.com/emeraldtrejo/">
-                <img src="images/icons8-github.svg">
-                </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 </body>
 
