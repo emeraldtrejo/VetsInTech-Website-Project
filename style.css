@@ -13,6 +13,15 @@
   width: 400px
 }
 
+.prism{
+  margin: 0;
+}
+
+.me {
+  width:auto;
+  height:400px;
+}
+
 .wrapper-masterhead {
   margin-bottom: 50px;
 }
