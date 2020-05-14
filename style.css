@@ -6,6 +6,13 @@
   margin-right: 15px;
 }
 
+.grids {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px
+}
+
 .wrapper-masterhead {
   margin-bottom: 50px;
 }

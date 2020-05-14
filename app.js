@@ -2,62 +2,62 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
        {
            name: 'mexico',
-           card: 'icons/mexico.png'
+           img: 'icons/mexico.png'
        },
 
         {
             name: 'mexico',
-            card: 'icons/mexico.png'
+            img: 'icons/mexico.png'
         },
 
         {
             name: 'movies',
-            card: 'icons/movies.png'
+            img: 'icons/movies.png'
         },
 
         {
             name: 'movies',
-            card: 'icons/movies.png'
+            img: 'icons/movies.png'
         },
 
         {
             name: 'pho',
-            card: 'icons/pho.png'
+            img: 'icons/pho.png'
         },
 
         {
             name: 'pho',
-            card: 'icons/pho.png'
+            img: 'icons/pho.png'
         },
 
         {
             name: 'taco',
-            card: 'icons/taco.png'
+            img: 'icons/taco.png'
         },
 
         {
             name: 'taco',
-            card: 'icons/taco.png'
+            img: 'icons/taco.png'
         },
 
         {
             name: 'travel',
-            card: 'icons/travel.png'
+            img: 'icons/travel.png'
         },
 
         {
             name: 'travel',
-            card: 'icons/travel.png'
+            img: 'icons/travel.png'
         },
 
         {
             name: 'run',
-            card: 'icons/run.png'
+            img: 'icons/run.png'
         },
 
         {
             name: 'run',
-            card: 'icons/run.png'
+            img: 'icons/run.png'
         },
     
     ]
@@ -71,9 +71,9 @@ const cardArray = [
     var cardsWon = []
     
     //create your gameboard
-function createBoard() {
+    function createBoard() {
         for(let i = 0; i < cardArray.length; i++){
-            var card = document.createElement('card')
+            var card = document.createElement('img')
             card.setAttribute('src', 'icons/back.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
@@ -83,18 +83,18 @@ function createBoard() {
 
     //check for matches
 function checkForMatch() {
-        var cards = document.querySelectorAll('.card')
+        var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
-        if(cardsChosen[0] === cardsChosen[1] && optionOneId !== optionTwoId){
-            //alert('You found a match!')
+        if(cardsChosen[0] === cardsChosen[1]){
+            alert('You found a match!')
             cards[optionOneId].setAttribute('src', 'icons/blank.png')
             cards[optionTwoId].setAttribute('src', 'icons/blank.png')
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src','icons/back.png')
             cards[optionTwoId].setAttribute('src','icons/back.png')
-            //alert('Sorry Try Again')
+            alert('Sorry Try Again')
         }
         cardsChosen = []
         cardsChosenId = []
@@ -112,7 +112,7 @@ function flipCard() {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 700)
+            setTimeout(checkForMatch, 100)
         }
     }
  createBoard()
