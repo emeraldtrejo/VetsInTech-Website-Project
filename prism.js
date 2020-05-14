@@ -6,9 +6,9 @@ var geometry, material, mesh;
 init();
 animate();
 
-const prism = document.querySelector('.prism')
-function init() {
 
+function init() {
+    const prism = document.querySelector('.prism')
     camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
     camera.position.z = 1;
 
@@ -22,7 +22,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.prism.appendChild( renderer.domElement );
+    prism.appendChild( renderer.domElement );
 
 }
 
